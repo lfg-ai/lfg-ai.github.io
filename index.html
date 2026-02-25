@@ -105,7 +105,7 @@
         <!-- Depth Results -->
         <section id="depth" class="content-section">
             <h2 class="section-title">Depth Estimation</h2>
-            <p class="section-description">Click on the image to cycle through: RGB Input &rarr; LFG Depth &rarr; &pi;<sup>3</sup> Depth</p>
+            <p class="section-description">Click on the image to cycle through: RGB Input &rarr; &pi;<sup>3</sup> Depth &rarr; LFG Depth</p>
             <div class="result-container" data-result-type="depth">
                 <div class="scene-selector">
                     <button class="scene-btn active" data-scene="1">Scene 1</button>
@@ -116,21 +116,23 @@
                     <div class="cycling-label">RGB Input</div>
                 </div>
                 <div class="frame-selector">
-                    <button class="frame-btn active" data-frame="0">Frame 1</button>
-                    <button class="frame-btn" data-frame="1">Frame 2</button>
-                    <button class="frame-btn" data-frame="2">Frame 3</button>
-                    <button class="frame-btn" data-frame="3">Frame 4</button>
-                    <button class="frame-btn" data-frame="4">Frame 5</button>
-                    <button class="frame-btn" data-frame="5">Frame 6</button>
+                    <span class="frame-group-label">Current:</span>
+                    <button class="frame-btn active current-frame" data-frame="0">Frame 1</button>
+                    <button class="frame-btn current-frame" data-frame="1">Frame 2</button>
+                    <button class="frame-btn current-frame" data-frame="2">Frame 3</button>
+                    <span class="frame-group-label future-label">Future:</span>
+                    <button class="frame-btn future-frame" data-frame="3">Frame 4</button>
+                    <button class="frame-btn future-frame" data-frame="4">Frame 5</button>
+                    <button class="frame-btn future-frame" data-frame="5">Frame 6</button>
                 </div>
             </div>
-            <p class="result-note">LFG predicts depth for both current and future frames, while &pi;<sup>3</sup> requires all frames as input.</p>
+            <p class="result-note">LFG predicts depth for both <strong>current</strong> (observed) and <strong>future</strong> (predicted) frames, while &pi;<sup>3</sup> requires all frames as input.</p>
         </section>
 
         <!-- Semantics Results -->
         <section id="semantics" class="content-section">
             <h2 class="section-title">Semantic Segmentation</h2>
-            <p class="section-description">Click on the image to cycle through: RGB Input &rarr; LFG Semantics &rarr; SegFormer</p>
+            <p class="section-description">Click on the image to cycle through: RGB Input &rarr; SegFormer &rarr; LFG Semantics</p>
             <div class="result-container" data-result-type="semantics">
                 <div class="scene-selector">
                     <button class="scene-btn active" data-scene="1">Scene 1</button>
@@ -141,13 +143,15 @@
                     <div class="cycling-label">RGB Input</div>
                 </div>
                 <div class="frame-selector">
-                    <button class="frame-btn active" data-frame="0">Frame 1</button>
-                    <button class="frame-btn" data-frame="1">Frame 2</button>
-                    <button class="frame-btn" data-frame="3">Frame 4</button>
-                    <button class="frame-btn" data-frame="5">Frame 6</button>
+                    <span class="frame-group-label">Current:</span>
+                    <button class="frame-btn active current-frame" data-frame="0">Frame 1</button>
+                    <button class="frame-btn current-frame" data-frame="1">Frame 2</button>
+                    <span class="frame-group-label future-label">Future:</span>
+                    <button class="frame-btn future-frame" data-frame="3">Frame 4</button>
+                    <button class="frame-btn future-frame" data-frame="5">Frame 6</button>
                 </div>
             </div>
-            <p class="result-note">LFG outperforms its SegFormer teacher on both current and future frame predictions.</p>
+            <p class="result-note">LFG outperforms its SegFormer teacher on both <strong>current</strong> (observed) and <strong>future</strong> (predicted) frame predictions.</p>
         </section>
 
         <!-- Motion Results -->
@@ -380,6 +384,7 @@
 
         <!-- Footer -->
         <footer class="footer">
+            <p>Contact: <a href="mailto:research@applied.co">research@applied.co</a></p>
             <p>Website template inspired by <a href="https://tensor-touch.github.io/" target="_blank">TensorTouch</a></p>
         </footer>
     </main>

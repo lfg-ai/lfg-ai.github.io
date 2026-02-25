@@ -44,43 +44,43 @@ const cyclingData = {
                     0: {
                         images: [
                             { src: 'static/images/results/depth/scene1/frame_00_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene1/frame_00_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene1/frame_00_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene1/frame_00_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene1/frame_00_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     },
                     1: {
                         images: [
                             { src: 'static/images/results/depth/scene1/frame_01_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene1/frame_01_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene1/frame_01_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene1/frame_01_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene1/frame_01_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     },
                     2: {
                         images: [
                             { src: 'static/images/results/depth/scene1/frame_02_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene1/frame_02_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene1/frame_02_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene1/frame_02_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene1/frame_02_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     },
                     3: {
                         images: [
                             { src: 'static/images/results/depth/scene1/frame_03_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene1/frame_03_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene1/frame_03_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene1/frame_03_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene1/frame_03_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     },
                     4: {
                         images: [
                             { src: 'static/images/results/depth/scene1/frame_04_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene1/frame_04_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene1/frame_04_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene1/frame_04_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene1/frame_04_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     },
                     5: {
                         images: [
                             { src: 'static/images/results/depth/scene1/frame_05_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene1/frame_05_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene1/frame_05_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene1/frame_05_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene1/frame_05_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     }
                 }
@@ -89,44 +89,44 @@ const cyclingData = {
                 frames: {
                     0: {
                         images: [
-                            { src: 'static/images/results/depth/scene2/frame_01_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene2/frame_01_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene2/frame_01_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene2/frame_00_rgb.png', label: 'RGB Input' },
+                            { src: 'static/images/results/depth/scene2/frame_00_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene2/frame_00_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     },
                     1: {
                         images: [
-                            { src: 'static/images/results/depth/scene2/frame_02_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene2/frame_02_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene2/frame_02_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene2/frame_01_rgb.png', label: 'RGB Input' },
+                            { src: 'static/images/results/depth/scene2/frame_01_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene2/frame_01_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     },
                     2: {
                         images: [
-                            { src: 'static/images/results/depth/scene2/frame_03_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene2/frame_03_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene2/frame_03_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene2/frame_02_rgb.png', label: 'RGB Input' },
+                            { src: 'static/images/results/depth/scene2/frame_02_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene2/frame_02_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     },
                     3: {
                         images: [
-                            { src: 'static/images/results/depth/scene2/frame_04_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene2/frame_04_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene2/frame_04_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene2/frame_03_rgb.png', label: 'RGB Input' },
+                            { src: 'static/images/results/depth/scene2/frame_03_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene2/frame_03_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     },
                     4: {
                         images: [
-                            { src: 'static/images/results/depth/scene2/frame_05_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene2/frame_05_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene2/frame_05_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene2/frame_04_rgb.png', label: 'RGB Input' },
+                            { src: 'static/images/results/depth/scene2/frame_04_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene2/frame_04_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     },
                     5: {
                         images: [
                             { src: 'static/images/results/depth/scene2/frame_05_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/depth/scene2/frame_05_regular_pi3_depth.png', label: 'LFG Depth' },
-                            { src: 'static/images/results/depth/scene2/frame_05_pi3_depth.png', label: '\u03C0\u00B3 Depth' }
+                            { src: 'static/images/results/depth/scene2/frame_05_regular_pi3_depth.png', label: '\u03C0\u00B3 Depth' },
+                            { src: 'static/images/results/depth/scene2/frame_05_pi3_depth.png', label: 'LFG Depth' }
                         ]
                     }
                 }
@@ -143,29 +143,29 @@ const cyclingData = {
                     0: {
                         images: [
                             { src: 'static/images/results/semantics/scene1/frame_00_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/semantics/scene1/frame_00_seg_colored.png', label: 'LFG Semantics' },
-                            { src: 'static/images/results/semantics/scene1/frame_00_pi3_seg_colored.png', label: 'SegFormer' }
+                            { src: 'static/images/results/semantics/scene1/frame_00_seg_colored.png', label: 'SegFormer' },
+                            { src: 'static/images/results/semantics/scene1/frame_00_pi3_seg_colored.png', label: 'LFG Semantics' }
                         ]
                     },
                     1: {
                         images: [
                             { src: 'static/images/results/semantics/scene1/frame_01_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/semantics/scene1/frame_01_seg_colored.png', label: 'LFG Semantics' },
-                            { src: 'static/images/results/semantics/scene1/frame_01_pi3_seg_colored (1).png', label: 'SegFormer' }
+                            { src: 'static/images/results/semantics/scene1/frame_01_seg_colored.png', label: 'SegFormer' },
+                            { src: 'static/images/results/semantics/scene1/frame_01_pi3_seg_colored (1).png', label: 'LFG Semantics' }
                         ]
                     },
                     3: {
                         images: [
                             { src: 'static/images/results/semantics/scene1/frame_03_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/semantics/scene1/frame_03_seg_colored.png', label: 'LFG Semantics' },
-                            { src: 'static/images/results/semantics/scene1/frame_03_pi3_seg_colored.png', label: 'SegFormer' }
+                            { src: 'static/images/results/semantics/scene1/frame_03_seg_colored.png', label: 'SegFormer' },
+                            { src: 'static/images/results/semantics/scene1/frame_03_pi3_seg_colored.png', label: 'LFG Semantics' }
                         ]
                     },
                     5: {
                         images: [
                             { src: 'static/images/results/semantics/scene1/frame_05_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/semantics/scene1/frame_05_seg_colored.png', label: 'LFG Semantics' },
-                            { src: 'static/images/results/semantics/scene1/frame_05_pi3_seg_colored.png', label: 'SegFormer' }
+                            { src: 'static/images/results/semantics/scene1/frame_05_seg_colored.png', label: 'SegFormer' },
+                            { src: 'static/images/results/semantics/scene1/frame_05_pi3_seg_colored.png', label: 'LFG Semantics' }
                         ]
                     }
                 }
@@ -175,29 +175,29 @@ const cyclingData = {
                     0: {
                         images: [
                             { src: 'static/images/results/semantics/scene2/frame_00_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/semantics/scene2/frame_00_seg_colored.png', label: 'LFG Semantics' },
-                            { src: 'static/images/results/semantics/scene2/frame_00_pi3_seg_colored.png', label: 'SegFormer' }
+                            { src: 'static/images/results/semantics/scene2/frame_00_seg_colored.png', label: 'SegFormer' },
+                            { src: 'static/images/results/semantics/scene2/frame_00_pi3_seg_colored.png', label: 'LFG Semantics' }
                         ]
                     },
                     1: {
                         images: [
                             { src: 'static/images/results/semantics/scene2/frame_01_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/semantics/scene2/frame_01_seg_colored.png', label: 'LFG Semantics' },
-                            { src: 'static/images/results/semantics/scene2/frame_01_pi3_seg_colored (1).png', label: 'SegFormer' }
+                            { src: 'static/images/results/semantics/scene2/frame_01_seg_colored.png', label: 'SegFormer' },
+                            { src: 'static/images/results/semantics/scene2/frame_01_pi3_seg_colored (1).png', label: 'LFG Semantics' }
                         ]
                     },
                     3: {
                         images: [
                             { src: 'static/images/results/semantics/scene2/frame_03_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/semantics/scene2/frame_05_seg_colored.png', label: 'LFG Semantics' },
-                            { src: 'static/images/results/semantics/scene2/frame_03_pi3_seg_colored.png', label: 'SegFormer' }
+                            { src: 'static/images/results/semantics/scene2/frame_05_seg_colored.png', label: 'SegFormer' },
+                            { src: 'static/images/results/semantics/scene2/frame_03_pi3_seg_colored.png', label: 'LFG Semantics' }
                         ]
                     },
                     5: {
                         images: [
                             { src: 'static/images/results/semantics/scene2/frame_05_rgb.png', label: 'RGB Input' },
-                            { src: 'static/images/results/semantics/scene2/frame_05_seg_colored.png', label: 'LFG Semantics' },
-                            { src: 'static/images/results/semantics/scene2/frame_05_pi3_seg_colored.png', label: 'SegFormer' }
+                            { src: 'static/images/results/semantics/scene2/frame_05_seg_colored.png', label: 'SegFormer' },
+                            { src: 'static/images/results/semantics/scene2/frame_05_pi3_seg_colored.png', label: 'LFG Semantics' }
                         ]
                     }
                 }

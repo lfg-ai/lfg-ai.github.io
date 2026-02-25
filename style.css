@@ -350,6 +350,19 @@ a.author:hover {
     gap: 0.5rem;
     margin-top: 1rem;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.frame-group-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-right: 0.25rem;
+}
+
+.frame-group-label.future-label {
+    margin-left: 0.75rem;
+    color: #dc2626;
 }
 
 .frame-btn {
@@ -363,14 +376,33 @@ a.author:hover {
     transition: all 0.2s ease;
 }
 
-.frame-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
+.frame-btn.current-frame {
+    border-color: #3b82f6;
 }
 
-.frame-btn.active {
-    border-color: var(--accent);
-    background: var(--accent);
+.frame-btn.future-frame {
+    border-color: #dc2626;
+}
+
+.frame-btn:hover {
+    opacity: 0.8;
+}
+
+.frame-btn.current-frame:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.frame-btn.future-frame:hover {
+    background: rgba(220, 38, 38, 0.1);
+}
+
+.frame-btn.active.current-frame {
+    background: #3b82f6;
+    color: white;
+}
+
+.frame-btn.active.future-frame {
+    background: #dc2626;
     color: white;
 }
 
