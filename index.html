@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFG: Learning to Drive is a Free Gift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="nav-content">
+            <a href="#top" class="nav-link active">Home</a>
+            <a href="#abstract" class="nav-link">Abstract</a>
+            <a href="#method" class="nav-link">Method</a>
+            <a href="#depth" class="nav-link">Depth</a>
+            <a href="#semantics" class="nav-link">Semantics</a>
+            <a href="#motion" class="nav-link">Motion</a>
+            <a href="#pointcloud" class="nav-link">Point Cloud</a>
+            <a href="#results" class="nav-link">Results</a>
+            <a href="#bibtex" class="nav-link">BibTeX</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Title Section -->
+        <section id="top" class="title-section">
+            <h1 class="paper-title">
+                <span class="lfg-title">LFG:</span> Learning to Drive is a <span class="gradient">Free Gift</span>
+            </h1>
+            <h2 class="paper-subtitle">
+                Large-Scale Label-Free Autonomy Pretraining from Unposed In-The-Wild Videos
+            </h2>
+            <p class="conference">CVPR 2026</p>
+
+            <!-- Authors -->
+            <div class="authors">
+                <a href="https://peasant98.github.io/" target="_blank" class="author">Matthew Strong<sup>1,2</sup></a>
+                <a href="https://scholar.google.com/citations?user=tF-OmYgAAAAJ&hl=en" target="_blank" class="author">Wei-Jer Chang<sup>1,3</sup></a>
+                <a href="https://scholar.google.com/citations?user=dxHTZAkAAAAJ&hl=en" target="_blank" class="author">Quentin Herau<sup>1</sup></a>
+                <a href="https://stephenjyang.com/" target="_blank" class="author">Jiezhi Yang<sup>1</sup></a>
+                <a href="https://scholar.google.com/citations?user=lf0bLigAAAAJ&hl=zh-CN" target="_blank" class="author">Yihan Hu<sup>1</sup></a>
+                <a href="https://pengchensheng.com/" target="_blank" class="author">Chensheng Peng<sup>1,3</sup></a>
+                <a href="https://zhanwei.site/" target="_blank" class="author">Wei Zhan<sup>1,3</sup></a>
+            </div>
+
+            <!-- Affiliations -->
+            <div class="affiliations">
+                <span class="affiliation"><sup>1</sup>Applied Intuition</span>
+                <span class="affiliation"><sup>2</sup>Stanford University</span>
+                <span class="affiliation"><sup>3</sup>UC Berkeley</span>
+            </div>
+
+            <!-- Links -->
+            <div class="links">
+                <a href="./lfg_cvpr.pdf" class="link-btn" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    Paper
+                </a>
+                <a href="#" class="link-btn disabled" title="Coming Soon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    Code (Coming Soon)
+                </a>
+            </div>
+        </section>
+
+        <!-- Teaser Figure -->
+        <section class="teaser-section">
+            <img src="static/images/teaser_new-1.png" alt="LFG Teaser Figure" class="teaser-image">
+            <p class="figure-caption">
+                <strong>Figure 1.</strong> LFG learns a unified pseudo-4D representation of geometry, semantics, motion, and short-term future evolution directly from unposed, unlabeled single-view driving videos. A single feedforward encoder processes observed frames and produces temporally consistent predictions of 3D point maps, camera poses, semantic layouts, confidence, and motion masks for both current and future frames.
+            </p>
+        </section>
+
+        <!-- Abstract -->
+        <section id="abstract" class="content-section">
+            <h2 class="section-title">Abstract</h2>
+            <p class="abstract-text">
+                Ego-centric driving videos available online provide an abundant source of visual data for autonomous driving, yet their lack of annotations makes it difficult to learn representations that capture both semantic structure and 3D geometry. Recent advances in large feedforward spatial models demonstrate that point maps and ego-motion can be inferred in a single forward pass, suggesting a promising direction for scalable driving perception. We therefore propose a <strong>label-free, teacher-guided framework</strong> for learning autonomous driving representations directly from unposed videos.
+            </p>
+            <p class="abstract-text">
+                Unlike prior self-supervised approaches that focus primarily on frame-to-frame consistency, we posit that safe and reactive driving depends critically on temporal context. To this end, we leverage a feedforward architecture equipped with a lightweight autoregressive module, trained using multi-modal supervisory signals that guide the model to jointly predict current and future point maps, camera poses, semantic segmentation, and motion masks.
+            </p>
+            <p class="abstract-text">
+                Multi-modal teachers provide sequence-level pseudo-supervision, enabling LFG to learn a <strong>unified pseudo-4D representation</strong> from raw YouTube videos without poses, labels, or LiDAR. The resulting encoder not only transfers effectively to downstream autonomous driving planning on the NAVSIM benchmark, <strong>surpassing multi-camera and LiDAR baselines with only a single monocular camera</strong>, but also yields strong performance when evaluated on a range of semantic, geometric, and qualitative motion prediction tasks.
+            </p>
+            <p class="abstract-text">
+                <em>We emphasize that the novelty of LFG lies more within the <strong>pretraining paradigm</strong> than the model architecture itself.</em>
+            </p>
+        </section>
+
+        <!-- Method -->
+        <section id="method" class="content-section">
+            <h2 class="section-title">Method at a Glance</h2>
+            <img src="static/images/method.png" alt="LFG Method" class="method-image">
+            <p class="figure-caption">
+                <strong>LFG Architecture.</strong> Starting from unposed single-view driving clips, a pretrained &pi;<sup>3</sup> backbone encodes N observed frames into latent scene tokens. A lightweight causal autoregressive transformer rolls out M future tokens, which a shared decoder maps to point maps, camera poses, semantic segmentation, confidence maps, and motion masks for all N+M frames. Multi-modal teachers provide pseudo-supervision, enabling LFG to learn a unified pseudo-4D representation that transfers effectively to downstream planning.
+            </p>
+        </section>
+
+        <!-- Depth Results -->
+        <section id="depth" class="content-section">
+            <h2 class="section-title">Depth Estimation</h2>
+            <p class="section-description">Click on the image to cycle through: RGB Input &rarr; LFG Depth &rarr; &pi;<sup>3</sup> Depth</p>
+            <div class="result-container" data-result-type="depth">
+                <div class="scene-selector">
+                    <button class="scene-btn active" data-scene="1">Scene 1</button>
+                    <button class="scene-btn" data-scene="2">Scene 2</button>
+                </div>
+                <div class="cycling-display" data-cycling="depth">
+                    <img src="static/images/results/depth/scene1/frame_00_rgb.png" alt="Depth comparison" class="result-image">
+                    <div class="cycling-label">RGB Input</div>
+                </div>
+                <div class="frame-selector">
+                    <button class="frame-btn active" data-frame="0">Frame 1</button>
+                    <button class="frame-btn" data-frame="1">Frame 2</button>
+                    <button class="frame-btn" data-frame="2">Frame 3</button>
+                    <button class="frame-btn" data-frame="3">Frame 4</button>
+                    <button class="frame-btn" data-frame="4">Frame 5</button>
+                    <button class="frame-btn" data-frame="5">Frame 6</button>
+                </div>
+            </div>
+            <p class="result-note">LFG predicts depth for both current and future frames, while &pi;<sup>3</sup> requires all frames as input.</p>
+        </section>
+
+        <!-- Semantics Results -->
+        <section id="semantics" class="content-section">
+            <h2 class="section-title">Semantic Segmentation</h2>
+            <p class="section-description">Click on the image to cycle through: RGB Input &rarr; LFG Semantics &rarr; SegFormer</p>
+            <div class="result-container" data-result-type="semantics">
+                <div class="scene-selector">
+                    <button class="scene-btn active" data-scene="1">Scene 1</button>
+                    <button class="scene-btn" data-scene="2">Scene 2</button>
+                </div>
+                <div class="cycling-display" data-cycling="semantics">
+                    <img src="static/images/results/semantics/scene1/frame_00_rgb.png" alt="Semantics comparison" class="result-image">
+                    <div class="cycling-label">RGB Input</div>
+                </div>
+                <div class="frame-selector">
+                    <button class="frame-btn active" data-frame="0">Frame 1</button>
+                    <button class="frame-btn" data-frame="1">Frame 2</button>
+                    <button class="frame-btn" data-frame="3">Frame 4</button>
+                    <button class="frame-btn" data-frame="5">Frame 6</button>
+                </div>
+            </div>
+            <p class="result-note">LFG outperforms its SegFormer teacher on both current and future frame predictions.</p>
+        </section>
+
+        <!-- Motion Results -->
+        <section id="motion" class="content-section">
+            <h2 class="section-title">Motion Prediction</h2>
+            <p class="section-description">Click on the image to cycle through: RGB Input &rarr; LFG Motion &rarr; Pseudo GT</p>
+            <div class="result-container" data-result-type="motion">
+                <div class="scene-selector">
+                    <button class="scene-btn active" data-scene="1">Scene 1</button>
+                    <button class="scene-btn" data-scene="2">Scene 2</button>
+                </div>
+                <div class="cycling-display" data-cycling="motion">
+                    <img src="static/images/results/motion/scene1/frame1.png" alt="Motion comparison" class="result-image">
+                    <div class="cycling-label">RGB Input</div>
+                </div>
+                <div class="frame-selector">
+                    <button class="frame-btn active" data-frame="1">Frame 1</button>
+                    <button class="frame-btn" data-frame="2">Frame 2</button>
+                    <button class="frame-btn" data-frame="3">Frame 3</button>
+                </div>
+            </div>
+            <p class="result-note">LFG correctly identifies dynamic objects (vehicles, pedestrians) and separates them from static scene elements.</p>
+        </section>
+
+        <!-- Point Cloud Results -->
+        <section id="pointcloud" class="content-section">
+            <h2 class="section-title">Point Cloud Reconstruction</h2>
+            <p class="section-description">Click on the image to cycle through: LFG &rarr; &pi;<sup>3</sup></p>
+            <div class="result-container" data-result-type="pointcloud">
+                <div class="cycling-display" data-cycling="pointcloud">
+                    <img src="static/images/results/pointcloud/lfg.png" alt="Point cloud comparison" class="result-image">
+                    <div class="cycling-label">LFG</div>
+                </div>
+            </div>
+            <p class="result-note">LFG preserves geometric structure and camera motion even when predicting future frames (shown in red poses).</p>
+        </section>
+
+        <!-- Quantitative Results -->
+        <section id="results" class="content-section">
+            <h2 class="section-title">Quantitative Results</h2>
+
+            <h3 class="table-title">NAVSIM Planning Benchmark</h3>
+            <p class="table-description">Single-camera LFG vs BEV-based baselines. Higher is better for all metrics.</p>
+            <div class="table-wrapper">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Input</th>
+                            <th>NC</th>
+                            <th>DAC</th>
+                            <th>TTC</th>
+                            <th>C.</th>
+                            <th>EP</th>
+                            <th>PDMS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>UniAD</td>
+                            <td>6Cam</td>
+                            <td>97.8</td>
+                            <td>91.9</td>
+                            <td>92.9</td>
+                            <td>100.0</td>
+                            <td>78.8</td>
+                            <td>83.4</td>
+                        </tr>
+                        <tr>
+                            <td>TransFuser</td>
+                            <td>3Cam+L</td>
+                            <td>97.7</td>
+                            <td>92.8</td>
+                            <td>92.0</td>
+                            <td>100.0</td>
+                            <td>79.2</td>
+                            <td>84.0</td>
+                        </tr>
+                        <tr>
+                            <td>Hydra-MDP</td>
+                            <td>3Cam+L</td>
+                            <td>96.9</td>
+                            <td>94.0</td>
+                            <td>94.0</td>
+                            <td>100.0</td>
+                            <td>78.7</td>
+                            <td>84.7</td>
+                        </tr>
+                        <tr>
+                            <td>DiffusionDrive</td>
+                            <td>3Cam+L</td>
+                            <td>96.8</td>
+                            <td>95.4</td>
+                            <td>94.7</td>
+                            <td>100.0</td>
+                            <td>82.0</td>
+                            <td>88.1</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>LFG (Ours)</strong></td>
+                            <td>1Cam</td>
+                            <td><strong>98.2</strong></td>
+                            <td>93.7</td>
+                            <td>94.4</td>
+                            <td>100.0</td>
+                            <td>79.1</td>
+                            <td><strong>85.2</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note">L = LiDAR. 1Cam uses only the front-view camera with past temporal frames (3-frame input).</p>
+
+            <h3 class="table-title">Data Efficiency Comparison</h3>
+            <p class="table-description">PDMS scores on NAVSIM with varying amounts of labeled training data.</p>
+            <div class="table-wrapper">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Input</th>
+                            <th>1%</th>
+                            <th>10%</th>
+                            <th>100%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DiffusionDrive</td>
+                            <td>3Cam+L</td>
+                            <td>64.9</td>
+                            <td>72.6</td>
+                            <td>88.1</td>
+                        </tr>
+                        <tr>
+                            <td>DINOv3</td>
+                            <td>1Cam</td>
+                            <td>60.0</td>
+                            <td>75.8</td>
+                            <td>81.4</td>
+                        </tr>
+                        <tr>
+                            <td>PPGeo</td>
+                            <td>1Cam</td>
+                            <td>61.5</td>
+                            <td>65.6</td>
+                            <td>74.6</td>
+                        </tr>
+                        <tr>
+                            <td>&pi;<sup>3</sup></td>
+                            <td>1Cam</td>
+                            <td>56.2</td>
+                            <td>77.5</td>
+                            <td>82.8</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>LFG (Ours)</strong></td>
+                            <td>1Cam</td>
+                            <td><strong>66.3</strong></td>
+                            <td><strong>81.4</strong></td>
+                            <td><strong>85.2</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note">LFG demonstrates strong data efficiency, matching full-data DINOv3 performance with only 10% labeled data.</p>
+
+            <h3 class="table-title">Ablation Studies</h3>
+            <p class="table-description">Component and scaling ablations on NAVSIM (PDMS). Higher is better.</p>
+            <div class="table-wrapper">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Setting</th>
+                            <th>1%</th>
+                            <th>10%</th>
+                            <th>100%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight-row">
+                            <td><strong>Original setting</strong></td>
+                            <td>66.3</td>
+                            <td>81.4</td>
+                            <td><strong>85.2</strong></td>
+                        </tr>
+                        <tr>
+                            <td>+ 2&times; pretraining data</td>
+                            <td>76.6</td>
+                            <td>82.3</td>
+                            <td>84.8</td>
+                        </tr>
+                        <tr>
+                            <td>+ Longer prediction horizon</td>
+                            <td><strong>80.5</strong></td>
+                            <td><strong>84.4</strong></td>
+                            <td>84.8</td>
+                        </tr>
+                        <tr>
+                            <td>- Seg, Motion</td>
+                            <td>64.8</td>
+                            <td>77.1</td>
+                            <td>84.6</td>
+                        </tr>
+                        <tr>
+                            <td>- Autoregressive head</td>
+                            <td>66.3</td>
+                            <td>77.7</td>
+                            <td>84.2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note">Scaling pretraining data and extending prediction horizon improve performance, while removing segmentation/motion supervision or the autoregressive head degrades results.</p>
+        </section>
+
+        <!-- BibTeX -->
+        <section id="bibtex" class="content-section">
+            <h2 class="section-title">BibTeX</h2>
+            <div class="bibtex-container">
+                <button class="copy-btn" onclick="copyBibtex()">Copy</button>
+                <pre class="bibtex-code"><code>@inproceedings{strong2026lfg,
+  title={Learning to Drive is a Free Gift: Large-Scale Label-Free Autonomy Pretraining from Unposed In-The-Wild Videos},
+  author={Strong, Matthew and Chang, Wei-Jer and Herau, Quentin and Yang, Jiezhi and Hu, Yihan and Peng, Chensheng and Zhan, Wei},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2026}
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Website template inspired by <a href="https://tensor-touch.github.io/" target="_blank">TensorTouch</a></p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
