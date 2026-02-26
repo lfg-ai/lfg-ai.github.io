@@ -177,6 +177,27 @@ a.author:hover {
     color: var(--accent);
 }
 
+/* Affiliation Logos */
+.affiliation-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.affiliation-logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.affiliation-logo:hover {
+    opacity: 1;
+}
+
 /* Contact */
 .contact {
     text-align: center;
