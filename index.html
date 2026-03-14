@@ -67,10 +67,11 @@
             <a href="#top" class="nav-link active">Home</a>
             <a href="#abstract" class="nav-link">Abstract</a>
             <a href="#method" class="nav-link">Method</a>
+            <a href="#motion" class="nav-link">Motion</a>
             <a href="#depth" class="nav-link">Depth</a>
             <a href="#semantics" class="nav-link">Semantics</a>
-            <a href="#motion" class="nav-link">Motion</a>
             <a href="#pointcloud" class="nav-link">Point Cloud</a>
+            <a href="#qualitative" class="nav-link">Qualitative</a>
             <a href="#results" class="nav-link">Results</a>
             <a href="#bibtex" class="nav-link">BibTeX</a>
         </div>
@@ -131,6 +132,13 @@
             </div>
         </section>
 
+        <!-- Teaser Video -->
+        <section class="teaser-section">
+            <video class="teaser-video" autoplay loop muted playsinline controls preload="metadata">
+                <source src="static/videos/lfg-3-6.mp4" type="video/mp4">
+            </video>
+        </section>
+
         <!-- Teaser Figure -->
         <section class="teaser-section">
             <img src="static/images/teaser_new-1.png" alt="LFG Teaser Figure" class="teaser-image">
@@ -163,6 +171,33 @@
             <p class="figure-caption">
                 <strong>LFG Architecture.</strong> Starting from unposed single-view driving clips, a pretrained &pi;<sup>3</sup> backbone encodes N observed frames into latent scene tokens. A lightweight causal autoregressive transformer rolls out M future tokens, which a shared decoder maps to point maps, camera poses, semantic segmentation, confidence maps, and motion masks for all N+M frames. Multi-modal teachers provide pseudo-supervision, enabling LFG to learn a unified pseudo-4D representation that transfers effectively to downstream planning.
             </p>
+        </section>
+
+        <!-- Motion Results -->
+        <section id="motion" class="content-section">
+            <h2 class="section-title">Motion Prediction</h2>
+            <div class="video-container">
+                <video class="result-video" autoplay loop muted playsinline controls preload="metadata">
+                    <source src="static/videos/motion.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="section-description">Click on the image to cycle through: RGB Input &rarr; LFG Motion &rarr; Pseudo GT</p>
+            <div class="result-container" data-result-type="motion">
+                <div class="scene-selector">
+                    <button class="scene-btn active" data-scene="1">Scene 1</button>
+                    <button class="scene-btn" data-scene="2">Scene 2</button>
+                </div>
+                <div class="cycling-display" data-cycling="motion">
+                    <img src="static/images/results/motion/scene1/frame1.png" alt="Motion comparison" class="result-image">
+                    <div class="cycling-label">RGB Input</div>
+                </div>
+                <div class="frame-selector">
+                    <button class="frame-btn active" data-frame="1">Frame 1</button>
+                    <button class="frame-btn" data-frame="2">Frame 2</button>
+                    <button class="frame-btn" data-frame="3">Frame 3</button>
+                </div>
+            </div>
+            <p class="result-note">LFG correctly identifies dynamic objects (vehicles, pedestrians) and separates them from static scene elements.</p>
         </section>
 
         <!-- Depth Results -->
@@ -217,28 +252,6 @@
             <p class="result-note">LFG outperforms its SegFormer teacher on both <strong>current</strong> (observed) and <strong>future</strong> (predicted) frame predictions.</p>
         </section>
 
-        <!-- Motion Results -->
-        <section id="motion" class="content-section">
-            <h2 class="section-title">Motion Prediction</h2>
-            <p class="section-description">Click on the image to cycle through: RGB Input &rarr; LFG Motion &rarr; Pseudo GT</p>
-            <div class="result-container" data-result-type="motion">
-                <div class="scene-selector">
-                    <button class="scene-btn active" data-scene="1">Scene 1</button>
-                    <button class="scene-btn" data-scene="2">Scene 2</button>
-                </div>
-                <div class="cycling-display" data-cycling="motion">
-                    <img src="static/images/results/motion/scene1/frame1.png" alt="Motion comparison" class="result-image">
-                    <div class="cycling-label">RGB Input</div>
-                </div>
-                <div class="frame-selector">
-                    <button class="frame-btn active" data-frame="1">Frame 1</button>
-                    <button class="frame-btn" data-frame="2">Frame 2</button>
-                    <button class="frame-btn" data-frame="3">Frame 3</button>
-                </div>
-            </div>
-            <p class="result-note">LFG correctly identifies dynamic objects (vehicles, pedestrians) and separates them from static scene elements.</p>
-        </section>
-
         <!-- Point Cloud Results -->
         <section id="pointcloud" class="content-section">
             <h2 class="section-title">Point Cloud Reconstruction</h2>
@@ -250,6 +263,16 @@
                 </div>
             </div>
             <p class="result-note">LFG preserves geometric structure and camera motion even when predicting future frames (shown in red poses).</p>
+        </section>
+
+        <!-- Qualitative Results -->
+        <section id="qualitative" class="content-section">
+            <h2 class="section-title">Qualitative Results</h2>
+            <div class="video-container">
+                <video class="result-video" autoplay loop muted playsinline controls preload="metadata">
+                    <source src="static/videos/lfg-3-3-1.mp4" type="video/mp4">
+                </video>
+            </div>
         </section>
 
         <!-- Quantitative Results -->

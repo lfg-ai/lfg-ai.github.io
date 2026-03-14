@@ -261,10 +261,23 @@ a.author:hover {
     margin: 2rem 0 3rem 0;
 }
 
-.teaser-image {
+.teaser-image,
+.teaser-video {
     width: 100%;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-md);
+}
+
+.video-container {
+    margin-bottom: 1.5rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.result-video {
+    width: 100%;
+    display: block;
 }
 
 .figure-caption {
@@ -640,6 +653,27 @@ a.author:hover {
     .results-table th,
     .results-table td {
         padding: 0.5rem;
+    }
+
+    .affiliation-logos {
+        gap: 1.25rem;
+    }
+
+    .affiliation-logo {
+        height: 30px;
+    }
+
+    .abstract-text {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .figure-caption {
+        font-size: 0.8rem;
+    }
+
+    .result-container {
+        padding: 1rem;
     }
 }
 
