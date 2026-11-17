@@ -139,11 +139,12 @@
 
         <!-- Teaser Video -->
         <section class="teaser-section">
-            <video class="teaser-video" autoplay loop muted playsinline controls preload="metadata">
-                <source src="static/videos/lfg-3-6.mp4" type="video/mp4">
+            <video class="teaser-video" autoplay loop muted playsinline controls preload="metadata" poster="static/images/lfg4d_poster.jpg">
+                <source src="static/videos/lfg4d.mp4" type="video/mp4">
             </video>
             <p class="figure-caption">
-                Given 3 RGB frames, LFG predicts current (3) and future (6) depths, camera poses, segmentation, and motion.
+                Everything shown is predicted by LFG from a single front camera on in-the-wild YouTube driving videos: depth, semantics, motion, camera poses, and the future (+1.25&nbsp;s). Each window takes 3 frames in and predicts 3 current + 3 future frames; consecutive windows are stitched into one map.
+                <br><span class="credits">Footage (CC BY): <a href="https://www.youtube.com/watch?v=ThakOg8laC0" target="_blank" rel="noopener">Travel Anytime</a>, <a href="https://www.youtube.com/watch?v=ESAeLT-WZdY" target="_blank" rel="noopener">Vietnam Silent Routes</a>, <a href="https://www.youtube.com/watch?v=BsvecXncMcg" target="_blank" rel="noopener">Driving Time</a>, <a href="https://www.youtube.com/watch?v=EZj5oKSjN0M" target="_blank" rel="noopener">RGRVA Dash Cam Drives</a>.</span>
             </p>
         </section>
 

@@ -705,3 +705,8 @@ a.author:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: #aaa;
 }
+
+.figure-caption .credits {
+    font-size: 0.85em;
+    opacity: 0.8;
+}
